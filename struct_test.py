@@ -7,6 +7,11 @@ import struct
 
 
 
+pad = struct.pack('!If',10240099,3.3)
+print pad
+i,f = struct.unpack('!If', pad)
+print i,f
+
 
 
 
